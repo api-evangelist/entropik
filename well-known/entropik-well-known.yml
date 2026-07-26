@@ -1,0 +1,39 @@
+generated: '2026-07-19'
+method: searched
+source: live probes of /.well-known/ on Entropik hosts
+notes: >-
+  No real well-known discovery documents are served. www.entropik.io returns 404
+  for all probed paths. getdecode.io returns HTTP 200 for every path but the body
+  is the Decode single-page-app HTML shell (text/html), not a valid security.txt
+  or JSON discovery document — recorded as soft-200. No WellKnown/APICatalog
+  pointer is wired because nothing genuine was found.
+hosts:
+- host: https://www.entropik.io
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+- host: https://getdecode.io
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    result: soft-200 (SPA HTML shell, not a valid security.txt)
+  - path: /.well-known/openid-configuration
+    status: 200
+    result: soft-200 (SPA HTML shell, not JSON)
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    result: soft-200 (SPA HTML shell, not JSON)
+  - path: /.well-known/api-catalog
+    status: 200
+    result: soft-200 (SPA HTML shell, not JSON)
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    result: soft-200 (SPA HTML shell, not JSON)

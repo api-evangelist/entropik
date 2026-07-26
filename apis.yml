@@ -1,8 +1,18 @@
 aid: entropik
 name: Entropik
-description: 'Entropik is a company surfaced as a portfolio company of bessemer-venture-partners and added
-  to the API Evangelist network as a stub for enrichment. Sector: ai-ml. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  Entropik is a human-insights company whose Decode platform uses Emotion AI —
+  facial coding, eye and gaze tracking, and voice-tonality analysis — to help
+  enterprises understand consumer and user behavior at scale. Decode combines an
+  AI Moderator for automated, human-like qualitative interviews, consumer and
+  shopper insights, webcam-based UX and user research, AI creative attention and
+  emotion prediction, and a centralized Insights Hub research repository with a
+  research copilot. Entropik reports serving 150+ enterprise clients across CPG,
+  technology and software, healthcare and pharma, financial services, and retail
+  and e-commerce. The company is backed by Bessemer Venture Partners. Entropik
+  does not currently publish a public developer API, OpenAPI, or developer
+  portal; this profile captures the company's identity, product surface, trust
+  and compliance posture, and domain security.
 url: https://raw.githubusercontent.com/api-evangelist/entropik/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +20,32 @@ x-backed-by:
 - bessemer-venture-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
+image: https://framerusercontent.com/images/foz3UmJZmfE255gwXm29hPNpkUU.png
 tags:
 - Company
 - Ai Ml
+- Emotion AI
+- Consumer Insights
+- User Research
+- UX Research
+- Market Research
+- Insights Platform
+- Eye Tracking
+- SaaS
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +55,41 @@ maintainers:
 common:
 - type: Website
   url: https://www.entropik.io/
+- type: Product
+  url: https://getdecode.io/
+- type: Pricing
+  url: https://www.entropik.io/pricing
+- type: SignUp
+  url: https://getdecode.io/user/signup
+- type: Login
+  url: https://getdecode.io/user/login
+- type: Support
+  url: https://help.getdecode.io/
+- type: HelpCenter
+  url: https://help.getdecode.io/
+- type: Blog
+  url: https://www.entropik.io/blog
+- type: TermsOfService
+  url: https://www.entropik.io/terms-of-use
+- type: PrivacyPolicy
+  url: https://www.entropik.io/privacy-policy/en
+- type: TrustCenter
+  url: https://trustcenter.entropik.io/
+- type: Compliance
+  url: https://trustcenter.entropik.io/
+- type: Security
+  url: https://trustcenter.entropik.io/
+- type: TrustCenter
+  name: Trust Center artifact
+  url: security/entropik-trust-center.yml
+- type: VulnerabilityDisclosure
+  url: security/entropik-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/entropik-domain-security.yml
+- type: Conformance
+  url: conformance/entropik-conformance.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

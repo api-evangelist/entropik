@@ -1,0 +1,28 @@
+generated: '2026-07-19'
+method: searched
+probe: true
+source: https://trustcenter.entropik.io/
+url: https://trustcenter.entropik.io/
+certifications:
+- SOC 2 Type II
+- ISO 27001
+- GDPR
+- CCPA
+frameworks_referenced:
+- NIST
+notes: >-
+  Entropik operates a hosted trust center at trustcenter.entropik.io (returns
+  HTTP 200 with a browser user-agent; 403 to generic bots). The page publishes a
+  SOC 2 Type II report, ISO 27001 certification, and GDPR and CCPA compliance
+  posture, references NIST, and lists a subprocessor register and a responsible
+  disclosure section. Certifications captured from the verified page body; report
+  documents are gated behind an access request.
+evidence:
+- source: https://trustcenter.entropik.io/
+  keywords:
+  - soc 2 type ii
+  - iso 27001
+  - gdpr
+  - ccpa
+  - subprocessor
+  - responsible disclosure
